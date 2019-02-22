@@ -18,7 +18,21 @@ class FlandersIndexContainer extends Component {
 
   handleSubmit(event){
     event.preventDefault();
-    let formPayload = this.state.phrase.splice( " ");
+    let formPayload = this.state.phrase.split(" ");
+    let pergatory = formPayload.map((word) => {
+      if(word.endsWith("r")){
+        word.concat("ino")
+      } else if (word.endsWith("")){
+        word.concat("")
+      } else if (word.endsWith("")){
+        word.concat("")
+      } else if (word.endsWith("")){
+        word.concat("")
+      } else {
+        word
+      }
+    })
+    this.setState({ output: pergatory.join(" ")})
 
 
   }
