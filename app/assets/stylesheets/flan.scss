@@ -1,6 +1,45 @@
 body {
-   background-image: url("https://s3.amazonaws.com/hom-development/sandwavedark.jpeg");
+   //background-image: url("https://s3.amazonaws.com/hom-development/flan/2341406.main_image.jpg");
+   background-color: #fbd800;
    background-repeat:repeat-y;
    background-position: right;
    background-size: cover;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  border-radius: 3px;
+}
+
+input:active {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid yellow;
+}
+
+.input-style{
+  width:200px;
+}
+
+.flanderize{
+  background-color: red;
+}
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    background: transparent;
+  color: black;
+}
+input[type="text"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    background: transparent;
+  color: black;
+    border-bottom: 1px solid orange;
 }
